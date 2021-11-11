@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV show searching thingy wingy dingy lingy doo</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!-- Styling the links that get added in since I'm too lazy to link a stylesheet
+    also adding in the google font xd-->
+    <style>
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #DEDEDE;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-dark bg-gradient text-white">
+    <div class="container mb-3">
+
+        <h1 class="text-center display-3">TV Show Search</h1>
+        <p class="text-center">Pretty simple app that uses DOM events and API queries to dynamically update
+            the website. </p>
+        <p class="text-center">Thanks for checking it out! - Camdyn B</p>
+        <form class='d-flex justify-content-center' id="tvForm">
+            <div class="input-group w-50">
+                <input type="text" placeholder="search 4 show" name="query" class="form-control">
+                <button type="submit" class="btn btn-success mx-1">Search</button>
+                <button id="resetMovieList" class="btn btn-danger" type="button">Reset</button>
+        </form>
+
+    </div>
+
+    </div>
+
+    <div class="container" id="movieContainer">
+
+    </div>
+
+    <script src="tvThingProject-JS.js"></script>
+</body>
+
+</html>
