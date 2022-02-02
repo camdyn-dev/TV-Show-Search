@@ -119,7 +119,7 @@ const nullImage = function (nullImage) {
 
 
 //this is so many fucking lines for something no one cares about
-//puts da search result in da container so if u retarded and 4got wat u searched 4 ///u see it
+//puts da search result in da container
 const resultCreation = function (searchInput) {
     const searchText = document.createElement('h2')
     searchText.textContent = `Results from your search for ${searchInput}`
